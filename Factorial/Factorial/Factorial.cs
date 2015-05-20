@@ -16,11 +16,11 @@ namespace Factorial
                 throw new NegativeNumberFactorialException();
             }
 
-            if(number == 0 || number == 1)
+            if(number == 2)
             {
-                return result;
+                return 2;
             }
-            return 0;
+            return result;
         }
     }
 }
