@@ -26,5 +26,13 @@ namespace Probability.Tests
             Assert.AreEqual(new Chance(new decimal(0.06)), thirtyPercentChance.And(twentyPercentChance));
         }
 
+        [Test]
+        public void TestForOr()
+        {
+            Chance thirtyPercentChance = new Chance(new decimal(0.3));
+            Chance twentyPercentChance = new Chance(new decimal(0.2));
+            Assert.AreEqual(new Chance(new decimal(0.44)), thirtyPercentChance.Or(twentyPercentChance));
+        }
+
     }
 }
