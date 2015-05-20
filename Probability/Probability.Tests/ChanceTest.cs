@@ -11,26 +11,29 @@ namespace Probability.Tests
     [TestFixture]
     public class ChanceTest
     {
+        private Chance thirtyPercentChance;
+        private Chance twentyPercentChance;
+        [SetUp]
+        public void SetUp()
+        {
+            thirtyPercentChance = new Chance(new decimal(0.3));
+            twentyPercentChance = new Chance(new decimal(0.2));
+        }
         [Test]
         public void TestForCompliment()
         {
-            Chance thirtyPercentChance = new Chance(new decimal(0.3));
             Assert.AreEqual(new Chance(new decimal(0.7)), thirtyPercentChance.Not());
         }
 
         [Test]
         public void TestForAnd()
         {
-            Chance thirtyPercentChance = new Chance(new decimal(0.3));
-            Chance twentyPercentChance = new Chance(new decimal(0.2));
             Assert.AreEqual(new Chance(new decimal(0.06)), thirtyPercentChance.And(twentyPercentChance));
         }
 
         [Test]
         public void TestForOr()
         {
-            Chance thirtyPercentChance = new Chance(new decimal(0.3));
-            Chance twentyPercentChance = new Chance(new decimal(0.2));
             Assert.AreEqual(new Chance(new decimal(0.44)), thirtyPercentChance.Or(twentyPercentChance));
         }
 
