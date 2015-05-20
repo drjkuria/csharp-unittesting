@@ -17,5 +17,11 @@ namespace Factorial.Tests
         {
             Factorial.Fact(-2);
         }
+
+        [Test]
+        public void TestFactorialOfZeroShouldBeOne()
+        {
+            Assert.That(Factorial.Fact(0), Is.EqualTo(1));
+        }
     }
 }
