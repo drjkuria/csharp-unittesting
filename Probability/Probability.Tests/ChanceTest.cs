@@ -17,5 +17,6 @@ namespace Probability.Tests
             Chance thirtyPercentChance = new Chance(new decimal(0.3));
             Assert.AreEqual(new Chance(new decimal(0.7)), thirtyPercentChance.Not());
         }
+
     }
 }
