@@ -12,10 +12,10 @@ namespace Factorial.Tests
     public class FactorialTest
     {
         [Test]
-        [ExpectedException(typeof(NegativeNumberFactorial))]
+        [ExpectedException(typeof(NegativeNumberFactorialException))]
         public void TestFactorialOfANegativeNumber()
         {
-
+            Factorial.Fact(-2);
         }
     }
 }

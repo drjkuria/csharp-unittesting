@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Factorial.csproj", "{2CE82FA6-52F8-4CB8-92A2-793B0C29CAD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial.Tests", "Factorial.Tests\Factorial.Tests.csproj", "{AFEDC86E-6D02-4756-B43F-660AA69EF962}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2CE82FA6-52F8-4CB8-92A2-793B0C29CAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CE82FA6-52F8-4CB8-92A2-793B0C29CAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CE82FA6-52F8-4CB8-92A2-793B0C29CAD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFEDC86E-6D02-4756-B43F-660AA69EF962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFEDC86E-6D02-4756-B43F-660AA69EF962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFEDC86E-6D02-4756-B43F-660AA69EF962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFEDC86E-6D02-4756-B43F-660AA69EF962}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
