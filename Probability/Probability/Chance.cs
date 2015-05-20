@@ -16,7 +16,7 @@ namespace Probability
 
         public Chance Not()
         {
-            return null;
+            return new Chance(1 - this.value);
         }
 
         public override bool Equals(object obj)
