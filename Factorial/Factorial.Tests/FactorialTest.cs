@@ -41,5 +41,11 @@ namespace Factorial.Tests
         {
             Assert.That(Factorial.Fact(3), Is.EqualTo(6));
         }
+
+        [Test]
+        public void TestFactorialOfFourShouldBeTwentyFour()
+        {
+            Assert.That(Factorial.Fact(4), Is.EqualTo(24));
+        }
     }
 }

@@ -16,14 +16,12 @@ namespace Factorial
                 throw new NegativeNumberFactorialException();
             }
 
-            if(number == 2)
+            while (number > 1)
             {
-                return 2;
+                result *= number;
+                number--;
             }
-            if (number == 3)
-            {
-                return 3 * 2 * 1;
-            }
+
             return result;
         }
     }
