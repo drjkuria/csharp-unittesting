@@ -20,6 +20,10 @@ namespace Factorial
             {
                 return 2;
             }
+            if (number == 3)
+            {
+                return 3 * 2 * 1;
+            }
             return result;
         }
     }

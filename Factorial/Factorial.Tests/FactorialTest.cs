@@ -35,5 +35,11 @@ namespace Factorial.Tests
         {
             Assert.That(Factorial.Fact(2), Is.EqualTo(2));
         }
+
+        [Test]
+        public void TestFactorialOfThreeShouldBeSix()
+        {
+            Assert.That(Factorial.Fact(3), Is.EqualTo(6));
+        }
     }
 }
