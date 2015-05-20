@@ -19,6 +19,11 @@ namespace Probability
             return new Chance(1 - this.value);
         }
 
+        public Chance And(Chance anotherChance)
+        {
+            return null;
+        }
+
         public override bool Equals(object obj)
         {
             if(obj == null)
