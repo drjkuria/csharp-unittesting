@@ -16,7 +16,7 @@ namespace Factorial
                 throw new NegativeNumberFactorialException();
             }
 
-            if(number == 0)
+            if(number == 0 || number == 1)
             {
                 return result;
             }

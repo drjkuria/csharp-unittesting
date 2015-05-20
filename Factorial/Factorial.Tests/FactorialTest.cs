@@ -23,5 +23,11 @@ namespace Factorial.Tests
         {
             Assert.That(Factorial.Fact(0), Is.EqualTo(1));
         }
+
+        [Test]
+        public void TestFactorialOfOneShouldBeOne()
+        {
+            Assert.That(Factorial.Fact(1), Is.EqualTo(1));
+        }
     }
 }
