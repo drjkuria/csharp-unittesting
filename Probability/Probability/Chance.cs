@@ -24,6 +24,11 @@ namespace Probability
             return new Chance(this.value * anotherChance.value);
         }
 
+        public Chance Or(Chance anotherChance)
+        {
+            return new Chance(this.value + anotherChance.value * this.Not().value);
+        }
+
         public override bool Equals(object obj)
         {
             if(obj == null)
