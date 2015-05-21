@@ -13,7 +13,15 @@ namespace Strategy
 
         public int CountPositive()
         {
-            return 0;
+            int count = 0;
+            foreach(int number in numbers)
+            {
+                if (number >= 0)
+                {
+                    count++;
+                }
+            }
+            return count;
         }
     }
 }
