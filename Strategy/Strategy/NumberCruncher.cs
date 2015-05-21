@@ -39,7 +39,15 @@ namespace Strategy
 
         public int CountEven()
         {
-            return 0;
+            int count = 0;
+            foreach(int number in numbers)
+            {
+                if(number % 2 == 0)
+                {
+                    count++;
+                }
+            }
+            return count;
         }
     }
 }
