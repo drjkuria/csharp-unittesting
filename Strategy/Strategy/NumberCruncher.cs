@@ -23,5 +23,10 @@ namespace Strategy
             }
             return count;
         }
+
+        public int CountNegative()
+        {
+            return 0;
+        }
     }
 }
