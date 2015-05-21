@@ -36,5 +36,10 @@ namespace Strategy
             }
             return count;
         }
+
+        public int CountEven()
+        {
+            return 0;
+        }
     }
 }
