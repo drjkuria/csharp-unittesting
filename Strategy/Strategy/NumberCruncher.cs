@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Strategy
 {
     public class NumberCruncher
     {
+        private readonly int[] numbers;
+        
+
+        public NumberCruncher(params int[] numbers)
+        {
+            this.numbers = numbers;
+        }
+
+        public int CountPositive()
+        {
+            return 0;
+        }
     }
 }
