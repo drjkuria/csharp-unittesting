@@ -52,7 +52,15 @@ namespace Strategy
 
         public int CountOdd()
         {
-            return 0;
+            int count = 0;
+            foreach(int number in numbers)
+            {
+                if(number % 2 == 1)
+                {
+                    count++;
+                }
+            }
+            return count;
         }
     }
 }
