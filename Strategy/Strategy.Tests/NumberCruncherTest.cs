@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NumberCrunching
+namespace Strategy.Tests
 {
     public class NumberCruncherTest
     {

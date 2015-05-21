@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NumberCruncher.Tests
+namespace Strategy
 {
-    class NumberCruncher
+    public class NumberCruncher
     {
     }
 }
