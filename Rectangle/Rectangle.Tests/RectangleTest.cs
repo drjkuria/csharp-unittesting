@@ -17,5 +17,12 @@ namespace Rectangle.Tests
             Rectangle rectangle = new Rectangle(5, 4);
             Assert.AreEqual(18, rectangle.Perimeter());
         }
+
+        [Test]
+        public void TestArea()
+        {
+            Rectangle rectangle = new Rectangle(5, 4);
+            Assert.AreEqual(20, rectangle.Area());
+        }
     }
 }

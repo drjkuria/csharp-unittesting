@@ -33,5 +33,10 @@ namespace Rectangle
         {
             return 2 * (length + width);
         }
+
+        public int Area()
+        {
+            return length * width;
+        }
     }
 }
