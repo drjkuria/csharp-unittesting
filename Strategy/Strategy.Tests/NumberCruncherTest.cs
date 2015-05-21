@@ -32,5 +32,12 @@ namespace Strategy.Tests
             Assert.AreEqual(5, evens);
         }
 
+        [Test]
+        public void TestCountOdd()
+        {
+            int odds = new NumberCruncher(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11).CountOdd();
+            Assert.AreEqual(6, odds);
+        }
+
     }
 }

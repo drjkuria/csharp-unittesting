@@ -49,5 +49,10 @@ namespace Strategy
             }
             return count;
         }
+
+        public int CountOdd()
+        {
+            return 0;
+        }
     }
 }
