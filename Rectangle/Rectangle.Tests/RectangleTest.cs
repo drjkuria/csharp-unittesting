@@ -11,17 +11,21 @@ namespace Rectangle.Tests
     [TestFixture]
     public class RectangleTest
     {
+        private Rectangle rectangle;
+        [SetUp]
+        public void SetUp()
+        {
+            rectangle = new Rectangle(5, 4);
+        }
         [Test]
         public void TestPerimeter()
         {
-            Rectangle rectangle = new Rectangle(5, 4);
             Assert.AreEqual(18, rectangle.Perimeter());
         }
 
         [Test]
         public void TestArea()
         {
-            Rectangle rectangle = new Rectangle(5, 4);
             Assert.AreEqual(20, rectangle.Area());
         }
 
