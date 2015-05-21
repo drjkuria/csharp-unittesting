@@ -29,6 +29,11 @@ namespace Rectangle
             this.width = width;
         }
 
+        public Rectangle(int side)
+        {
+            Create(side);
+        }
+
         public int Perimeter()
         {
             return 2 * (length + width);
@@ -37,6 +42,11 @@ namespace Rectangle
         public int Area()
         {
             return length * width;
+        }
+
+        public Rectangle Create(int side)
+        {
+            return new Rectangle(side, side);
         }
     }
 }

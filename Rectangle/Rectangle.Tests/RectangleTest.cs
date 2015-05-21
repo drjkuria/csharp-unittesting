@@ -24,5 +24,12 @@ namespace Rectangle.Tests
             Rectangle rectangle = new Rectangle(5, 4);
             Assert.AreEqual(20, rectangle.Area());
         }
+
+        [Test]
+        public void TestSquare()
+        {
+            Rectangle square = new Rectangle(5);
+            Assert.AreEqual(square.Length, square.Width);
+        }
     }
 }
