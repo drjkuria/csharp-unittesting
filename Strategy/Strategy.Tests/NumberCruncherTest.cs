@@ -21,7 +21,7 @@ namespace Strategy.Tests
         [Test]
         public void TestCountNegative()
         {
-            int negatives = new NumberCruncher(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4).CountNegative();
+            int negatives = new NumberCruncher(new NegativeFilter(), -5, -4, -3, -2, -1, 0, 1, 2, 3, 4).CountNegative();
             Assert.AreEqual(5, negatives);
         }
 

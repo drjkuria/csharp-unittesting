@@ -4,10 +4,17 @@ namespace Strategy
     public class NumberCruncher
     {
         private readonly int[] numbers;
+        private Filter filter;
         
 
         public NumberCruncher(params int[] numbers)
         {
+            this.numbers = numbers;
+        }
+
+        public NumberCruncher(Filter filter, params int[] numbers)
+        {
+            this.filter = filter;
             this.numbers = numbers;
         }
 
@@ -27,7 +34,6 @@ namespace Strategy
         public int CountNegative()
         {
             int count = 0;
-            Filter filter = new NegativeFilter();
             foreach(int number in numbers)
             {
                 count = filter.NumbersCount(count, number);
