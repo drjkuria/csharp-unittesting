@@ -27,9 +27,10 @@ namespace Strategy
         public int CountNegative()
         {
             int count = 0;
+            Filter filter = new NegativeFilter();
             foreach(int number in numbers)
             {
-                count = NegativeFilter.NumbersCount(count, number);
+                count = filter.NumbersCount(count, number);
             }
             return count;
         }

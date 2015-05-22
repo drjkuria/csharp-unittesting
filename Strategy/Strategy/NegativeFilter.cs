@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Strategy
 {
-    public class NegativeFilter
+    public class NegativeFilter : Filter
     {
-        public static int NumbersCount(int count, int number)
+        public int NumbersCount(int count, int number)
         {
             if (number < 0)
             {
