@@ -45,7 +45,6 @@ namespace Strategy
         public int CountEven()
         {
             int count = 0;
-            filter = new EvenFilter();
             foreach(int number in numbers)
             {
                 count = filter.NumbersCount(count, number);

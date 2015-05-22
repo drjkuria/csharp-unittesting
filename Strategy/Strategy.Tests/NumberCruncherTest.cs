@@ -28,7 +28,7 @@ namespace Strategy.Tests
         [Test]
         public void TestCountEven()
         {
-            int evens = new NumberCruncher(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11).CountEven();
+            int evens = new NumberCruncher(new EvenFilter(), 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11).CountEven();
             Assert.AreEqual(5, evens);
         }
 
