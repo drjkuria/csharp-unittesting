@@ -21,21 +21,15 @@ namespace Strategy
         public int CountPositive()
         {
             int count = 0;
+            filter = new PositiveFilter();
             foreach(int number in numbers)
             {
-                count = NumbersCount(count, number);
+                count = filter.NumbersCount(count, number);
             }
             return count;
         }
 
-        private static int NumbersCount(int count, int number)
-        {
-            if (number >= 0)
-            {
-                count++;
-            }
-            return count;
-        }
+        
 
         public int CountNegative()
         {
