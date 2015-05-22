@@ -14,7 +14,7 @@ namespace Strategy.Tests
         [Test]
         public void TestCountPositive()
         {
-            int positives = new NumberCruncher(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4).CountPositive();
+            int positives = new NumberCruncher(new PositiveFilter(), -5, -4, -3, -2, -1, 0, 1, 2, 3, 4).CountPositive();
             Assert.AreEqual(5, positives);
         }
 

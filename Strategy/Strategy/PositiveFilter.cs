@@ -7,7 +7,7 @@ namespace Strategy
 {
     public class PositiveFilter: Filter
     {
-        public static int NumbersCount(int count, int number)
+        public int NumbersCount(int count, int number)
         {
             if (number >= 0)
             {

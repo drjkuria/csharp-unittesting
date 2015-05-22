@@ -21,7 +21,6 @@ namespace Strategy
         public int CountPositive()
         {
             int count = 0;
-            filter = new PositiveFilter();
             foreach(int number in numbers)
             {
                 count = filter.NumbersCount(count, number);
