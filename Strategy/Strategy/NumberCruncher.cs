@@ -12,7 +12,7 @@ namespace Strategy
             this.numbers = numbers;
         }
 
-        public int CountPositive()
+        public int Count()
         {
             int count = 0;
             foreach(int number in numbers)
