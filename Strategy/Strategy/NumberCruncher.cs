@@ -6,12 +6,6 @@ namespace Strategy
         private readonly int[] numbers;
         private Filter filter;
         
-
-        public NumberCruncher(params int[] numbers)
-        {
-            this.numbers = numbers;
-        }
-
         public NumberCruncher(Filter filter, params int[] numbers)
         {
             this.filter = filter;
