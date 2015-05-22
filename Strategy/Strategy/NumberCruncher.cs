@@ -29,19 +29,12 @@ namespace Strategy
             int count = 0;
             foreach(int number in numbers)
             {
-                count = NumbersCount(count, number);
+                count = NegativeFilter.NumbersCount(count, number);
             }
             return count;
         }
 
-        private static int NumbersCount(int count, int number)
-        {
-            if (number < 0)
-            {
-                count++;
-            }
-            return count;
-        }
+        
 
         public int CountEven()
         {
