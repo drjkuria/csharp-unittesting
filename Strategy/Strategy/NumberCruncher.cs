@@ -45,21 +45,15 @@ namespace Strategy
         public int CountEven()
         {
             int count = 0;
+            filter = new EvenFilter();
             foreach(int number in numbers)
             {
-                count = NumbersCount(count, number);
+                count = filter.NumbersCount(count, number);
             }
             return count;
         }
 
-        private static int NumbersCount(int count, int number)
-        {
-            if (number % 2 == 0)
-            {
-                count++;
-            }
-            return count;
-        }
+        
 
         public int CountOdd()
         {
