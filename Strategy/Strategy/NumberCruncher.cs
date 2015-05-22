@@ -21,41 +21,5 @@ namespace Strategy
             }
             return count;
         }
-
-        
-
-        public int CountNegative()
-        {
-            int count = 0;
-            foreach(int number in numbers)
-            {
-                count = filter.NumbersCount(count, number);
-            }
-            return count;
-        }
-
-        
-
-        public int CountEven()
-        {
-            int count = 0;
-            foreach(int number in numbers)
-            {
-                count = filter.NumbersCount(count, number);
-            }
-            return count;
-        }
-
-        
-
-        public int CountOdd()
-        {
-            int count = 0;
-            foreach(int number in numbers)
-            {
-                count = filter.NumbersCount(count, number);
-            }
-            return count;
-        }
     }
 }
