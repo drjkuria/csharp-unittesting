@@ -57,18 +57,10 @@ namespace Strategy
         public int CountOdd()
         {
             int count = 0;
+            filter = new OddFilter();
             foreach(int number in numbers)
             {
-                count = NumbersCount(count, number);
-            }
-            return count;
-        }
-
-        private static int NumbersCount(int count, int number)
-        {
-            if (number % 2 == 1)
-            {
-                count++;
+                count = filter.NumbersCount(count, number);
             }
             return count;
         }
