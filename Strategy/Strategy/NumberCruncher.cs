@@ -47,10 +47,16 @@ namespace Strategy
             int count = 0;
             foreach(int number in numbers)
             {
-                if(number % 2 == 0)
-                {
-                    count++;
-                }
+                count = NumbersCount(count, number);
+            }
+            return count;
+        }
+
+        private static int NumbersCount(int count, int number)
+        {
+            if (number % 2 == 0)
+            {
+                count++;
             }
             return count;
         }
