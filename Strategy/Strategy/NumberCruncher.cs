@@ -57,7 +57,6 @@ namespace Strategy
         public int CountOdd()
         {
             int count = 0;
-            filter = new OddFilter();
             foreach(int number in numbers)
             {
                 count = filter.NumbersCount(count, number);
